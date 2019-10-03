@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GitHub Repos App</string>
+    <string name="enter_to_github">ENTER TO GITHUB</string>
+    <string name="welcome_message">Welcome to GitHubReposApp! This app shows List of repositories available in GitHub and upon clicking on repo, user is redirected to a details page that show more information about that respository.</string>
+    <string name="WELCOME">Welcome</string>
+    <string name="repos_details_view">Repo Details View</string>
+    <string name="repo_name">Repo Name:</string>
+    <string name="repos_desc"> Repo Description:</string>
+    <string name="created_date">Created Date: </string>
+    <string name="last_updated"> Last Updated: </string>
+    <string name="link_to_repos">Link To The Repo:</string>
+    <string name="license_info">License Info: </string>
+
+</resources>
