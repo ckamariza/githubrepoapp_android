@@ -26,13 +26,10 @@ public class HomePageActivity extends AppCompatActivity {
         bar.setDisplayHomeAsUpEnabled(false);
         bar.setHomeButtonEnabled(false);
 
-        AppCompatButton enterbtn =(AppCompatButton) findViewById(R.id.enter_btn);
-        enterbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomePageActivity.this,MainActivity.class);
-                startActivity(intent);
-            }
+        AppCompatButton enterBtn = findViewById(R.id.enter_btn);
+        enterBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(HomePageActivity.this,MainActivity.class);
+            startActivity(intent);
         });
 
     }
