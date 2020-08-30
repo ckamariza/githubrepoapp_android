@@ -38,7 +38,7 @@ public class ListFragment extends BaseFragment implements RepoSelectedListener {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        ((MainActivity) getActivity()).getSupportActionBar().setTitle("GitHub Repos View");
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle("Repos List");
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         ((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(false);
 

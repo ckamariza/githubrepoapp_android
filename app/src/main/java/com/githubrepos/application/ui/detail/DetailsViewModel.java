@@ -12,12 +12,12 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.observers.DisposableSingleObserver;
 import io.reactivex.schedulers.Schedulers;
 
-import com.githubrepos.application.data.Constants;
 import com.githubrepos.application.data.model.Repo;
 import com.githubrepos.application.data.rest.RepoRepository;
 
 public class DetailsViewModel extends ViewModel {
 
+    private static final String REPO_DETAILS_KEY = "Repo details key";
     private final RepoRepository repoRepository;
     private CompositeDisposable disposable;
 
@@ -39,7 +39,7 @@ public class DetailsViewModel extends ViewModel {
 
     public void saveToBundle(Bundle outState) {
         if(selectedRepo.getValue() != null) {
-            outState.putStringArray(Constants.REPO_DETAILS_KEY, new String[] {
+            outState.putStringArray(REPO_DETAILS_KEY, new String[] {
                     selectedRepo.getValue().owner.login,
                     selectedRepo.getValue().name
             });
@@ -48,8 +48,8 @@ public class DetailsViewModel extends ViewModel {
 
     public void restoreFromBundle(Bundle savedInstanceState) {
         if(selectedRepo.getValue() == null) {
-            if(savedInstanceState != null && savedInstanceState.containsKey(Constants.REPO_DETAILS_KEY)) {
-                loadRepo(savedInstanceState.getStringArray(Constants.REPO_DETAILS_KEY));
+            if(savedInstanceState != null && savedInstanceState.containsKey(REPO_DETAILS_KEY)) {
+                loadRepo(savedInstanceState.getStringArray(REPO_DETAILS_KEY));
             }
         }
     }

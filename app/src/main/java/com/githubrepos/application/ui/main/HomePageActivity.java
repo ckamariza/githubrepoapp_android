@@ -21,7 +21,7 @@ public class HomePageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         ActionBar bar = getSupportActionBar();
-        bar.setTitle("GITHUB Repos APP");
+        bar.setTitle("Github Repos");
         // Enable the up button
         bar.setDisplayHomeAsUpEnabled(false);
         bar.setHomeButtonEnabled(false);
